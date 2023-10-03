@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+    
+
+    height: 100vh;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 48px;
+    
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+button {
+    border: 1.5px solid #8B5CF6;
+    border-radius: 8px;
+
+    background-color: transparent;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%; 
+}
+
+button:hover {
+   cursor: pointer;
+   opacity: .6;
+   transition: .3s;
+}
+#form-habits {
+    display: flex;
+    flex-direction: row;
+        
+    padding: 182px 48px 48px; 
+    width: fit-content;
+}
+
+.habits {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+
+    margin-top: 52px;
+}
+
+.habit {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    font-size: 32px;
+
+    width: 40px;
+    height: 64px;
+   
+}
+
+.habit span {
+    font-size: 22px;
+    font-family: 'inter','sans-serif';
+
+    margin-top: 10px;
+}
+
+.days {
+    display: flex;
+    gap: 48px;
+    margin-left: 45px; 
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.day div {
+    margin-bottom: 8px;
+    text-align: center;
+
+    font-family: 'Roboto mono';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 125%;
+
+    color: #A1A1AA;
+
+}
+
+input {
+    -webkit-appearance: none;
+     appearance: none;
+    width: 64px;
+    height: 64px;
+
+    border: 2px solid #27272A;
+    border-radius: 8px;
+
+    background: #18181B;    
+}
+
+input:checked {
+    background: #895af6;
+    border: 2px solid #A78BFA;
+}
+
+@media (max-width: 570px) {
+    button div {
+        display: none;
+
+    }
+
+    .habit span {
+        font-size: 22px;
+        font-family: 'inter','sans-serif';
+    
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+}
